@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quantx"
+version = "0.1.0"
+description = "QuantX — Quantitative Trading, Portfolio Optimization & Risk Analytics Platform"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi>=0.115.0",
+  "httpx>=0.27.0,<0.28.0",
+  "streamlit>=1.36.0",
+  "sqlalchemy>=2.0.31",
+  "pandas>=2.2.2",
+  "numpy>=1.26.4",
+  "scipy>=1.14.1",
+  "scikit-learn>=1.5.1",
+  "xgboost>=2.1.1",
+  "plotly>=5.23.0",
+  "python-dotenv>=1.0.1",
+  "pydantic>=2.7.4",
+  "pydantic-settings>=2.2.1",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.3.2",
+  "black>=24.4.2",
+  "ruff>=0.5.5",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = [".", "src"]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 120
+src = ["src"]
+
+[tool.ruff.lint]
+select = ["E", "F", "B", "I"]
+ignore = []
