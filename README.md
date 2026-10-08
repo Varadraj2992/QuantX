@@ -417,20 +417,29 @@ The CI workflow helps ensure that code changes maintain project quality and do n
 
 ## 11. Dashboard Screenshots
 
+## Dashboard
+
+QuantX provides an interactive Streamlit dashboard for quantitative research, portfolio analytics, strategy evaluation, benchmark comparison, risk monitoring, and ML-based market signals.
+
 ### Executive Overview
 
-![QuantX Executive Dashboard](docs/screenshots/executive-overview.png)
+![QuantX Executive Overview](docs/screenshots/executive-overview.png)
 
-### ML Signal Center
+### Benchmark Comparison
 
-![QuantX ML Signal Center](docs/screenshots/ml-signal-center.png)
+![QuantX Benchmark Comparison](docs/screenshots/benchmark-comparison.png)
 
 ### Strategy & Portfolio Analytics
 
 ![QuantX Strategy Analytics](docs/screenshots/strategy-analytics.png)
 
-> Add the actual screenshots to `docs/screenshots/` before publishing these image references.
+### Risk Dashboard
 
+![QuantX Risk Dashboard](docs/screenshots/risk-dashboard.png)
+
+### ML Signal Center
+
+![QuantX ML Signal Center](docs/screenshots/ml-signal-center.png)
 ---
 
 ## 12. Project Highlights
